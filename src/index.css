@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html,
+  body {
+    @apply bg-neutral-950 text-neutral-200 overflow-x-hidden
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none;
+  }
+}
+
+@layer components {
+
+  /* 
+  ------------------
+  BENTO STYLE START
+  ------------------
+  */
+  .bento {
+    @apply h-screen w-screen flex gap-4 p-32
+  }
+
+  /* 
+  ------------------
+  BENTO STYLE END
+  ------------------
+  */
+
+
+  /* 
+  ------------------
+  CARD STYLE START
+  ------------------
+  */
+  .card {
+    @apply border border-neutral-800 p-2 rounded-lg
+  }
+
+  .card-title {
+    @apply w-full border-b border-neutral-800 mb-2 font-bold text-xl
+  }
+
+  .wrap-card-main {
+    @apply grid grid-cols-2 gap-4 h-fit w-full h-full
+  }
+
+  .card-main {
+    @apply flex flex-col justify-center gap-5 w-[450px] h-[600px]
+  }
+
+  .card-section-price {
+    @apply col-start-1 col-span-2 row-start-1 row-span-2 flex flex-col justify-center w-full p-2 border-b border-neutral-800
+  }
+
+  .card-section-params {
+    @apply col-start-3 col-span-2 row-start-1 row-span-2 gap-1 w-full flex flex-col justify-center
+  }
+
+  .card-section-taxes {
+    @apply col-start-1 col-span-2 row-start-2 flex flex-col pt-2
+  }
+
+  .card-taxes-line {
+    @apply flex justify-between text-xs py-2 border-b border-neutral-800 text-neutral-500
+  }
+
+  /* 
+  ------------------
+  CARD STYLE END
+  ------------------
+  */
+  /* 
+  ------------------
+  INPUT STYLE START
+  ------------------
+  */
+  .input-select {
+    @apply appearance-none outline-none w-full p-1 text-xs bg-neutral-950 border border-solid border-neutral-800 focus:border-amber-400 focus:text-amber-400
+  }
+
+  .input-default {
+    @apply appearance-none p-1 w-full text-end font-semibold bg-neutral-950 border border-solid border-neutral-800 focus:border-amber-400 focus:text-amber-400 outline-none
+  }
+
+  .input-error {
+    @apply appearance-none w-full p-1 bg-neutral-950 text-center text-red-500 border border-solid border-red-500 focus:border-red-500 outline-none
+  }
+
+  .input-error-msg {
+    @apply absolute h-fit p-1 bottom-0 left-0 text-red-500 text-xs text-end w-full pointer-events-none
+  }
+
+  /* 
+  ------------------
+  INPUT STYLE END
+  ------------------
+  */
+
+}
+
+/*   .card {
+    @apply border border-neutral-800 p-2 rounded-lg
+  }
+
+  .wrap-card-main {
+    @apply flex flex-col gap-4 h-fit
+  }
+
+  .card-main {
+    @apply grid grid-cols-4 grid-rows-2 gap-2 w-full
+  }
+
+  .card-price {
+    @apply col-start-1 col-span-2 row-start-1 row-span-2 flex flex-col justify-center w-full p-2
+  }
+
+  .card-main-params {
+    @apply col-start-3 col-span-2 row-start-1
+  }
+
+  .card-params {
+    @apply col-start-3 col-span-2 row-start-1 row-span-2 gap-1 w-full flex flex-col justify-center
+  }
+
+  .card-taxes {
+    @apply col-start-1 col-span-2 row-start-2 flex flex-col gap-1 border-t border-neutral-800 pt-2 text-xs px-2
+  }
+
+  .card-taxes-line {
+    @apply flex justify-between text-xs border-b border-neutral-800 text-neutral-500
+  } */
